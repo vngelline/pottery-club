@@ -37,7 +37,7 @@ main {
 /* General Styles */
 
 h1 {
-  font-family: "Heiti SC Medium", sans-serif;
+  font-family: "Heiti SC Medium", "Poppins", sans-serif;
   font-size: 3rem;
   font-weight: 400;
   color: #502b08;
@@ -51,21 +51,21 @@ h1 {
 }
 
 h2 {
-  font-family: "Heiti SC Medium", sans-serif;
+  font-family: "Heiti SC Medium", "Poppins", sans-serif;
   font-weight: 400;
   font-size: 2rem;
   color: #502b08;
 }
 
 h3 {
-  font-family: "Heiti SC Medium";
+  font-family: "Heiti SC Medium", "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
   color: #502b08;
 }
 
 p {
-  font-family: "Heiti SC Light", sans-serif;
+  font-family: "Heiti SC Light", "Poppins", sans-serif;
   font-weight: 200;
   font-size: 1.25rem;
   color: #502b08;
@@ -85,7 +85,7 @@ img {
   background: #8d541f;
   color: #fff8f2;
   text-decoration: none;
-  font-family: "Heiti SC Medium", sans-serif;
+  font-family: "Heiti SC Medium", "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
   align-items: center;
@@ -152,7 +152,7 @@ header ul {
   align-items: center;
   gap: 2.5rem;
   list-style: none;
-  font-family: "Heiti SC Light", sans-serif;
+  font-family: "Heiti SC Light", "Poppins", sans-serif;
   font-weight: 300;
   font-size: 1rem;
 }
@@ -348,7 +348,7 @@ header a:active {
 }
 
 #workshops .details p {
-  font-family: "Heiti SC Medium";
+  font-family: "Heiti SC Medium", "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1rem;
 }
@@ -414,7 +414,7 @@ header a:active {
 #contacts li {
   list-style: none;
   font-size: 1.25rem;
-  font-family: "Heiti SC Light";
+  font-family: "Heiti SC Light", "Poppins", sans-serif;
   font-weight: 300;
   line-height: 140%;
 }
@@ -459,7 +459,7 @@ footer .copyright {
 }
 
 footer p {
-    font-family: "Heiti SC Light", sans-serif;
+    font-family: "Heiti SC Light", "Poppins", sans-serif;
     font-size: 0.75rem;
     font-weight: 300;
 }
