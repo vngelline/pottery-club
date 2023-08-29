@@ -1,0 +1,471 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+main {
+    background-color: #fff8f2;
+}
+
+@font-face {
+  font-family: "Heiti SC Light";
+  src: url(./heiti-sc-light\ 3.otf) format("opentype"),
+    url(./heiti-sc-light\ 3.ttf) format("truetype"),
+    url(./heiti-sc-light\ 3.woff) format("woff"),
+    url(./heiti-sc-light\ 3.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  /* font-weight: 300; */
+}
+
+@font-face {
+  font-family: "Heiti SC Medium";
+  src: url(./heiti-sc-medium.otf) format("opentype"),
+    url(./heiti-sc-medium.ttf) format("truetype"),
+    url(./heiti-sc-medium.woff) format("woff"),
+    url(./heiti-sc-medium.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  /* font-weight: 400; */
+}
+
+/* General Styles */
+
+h1 {
+  font-family: "Heiti SC Medium", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #502b08;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+h2 {
+  font-family: "Heiti SC Medium", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #502b08;
+}
+
+h3 {
+  font-family: "Heiti SC Medium";
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #502b08;
+}
+
+p {
+  font-family: "Heiti SC Light", sans-serif;
+  font-weight: 200;
+  font-size: 1.25rem;
+  color: #502b08;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Component Styles */
+
+.button-primary,
+.card-button {
+  display: flex;
+  border-radius: 50px;
+  background: #8d541f;
+  color: #fff8f2;
+  text-decoration: none;
+  font-family: "Heiti SC Medium", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  align-items: center;
+}
+
+.button-primary {
+  padding: 0.75rem 1.875rem;
+}
+
+.card-button {
+  padding: 0.625rem 1.25rem;
+  align-self: stretch;
+  justify-content: center;
+}
+
+.button-primary:hover,
+.card-button:hover {
+  background-color: #502b08;
+}
+
+.button-primary:active,
+.card-button:active {
+  background-color: rgba(80, 43, 8, 0.9);
+}
+
+.button-secondary {
+  display: flex;
+  padding: 10px 20px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 30px;
+  border: 1px solid #8d541f;
+}
+
+.button-secondary:hover {
+  text-decoration: none;
+  color: #fff8f2;
+  background-color: #8d541f;
+}
+
+.button-secondary:active {
+  text-decoration: none;
+  color: #fff8f2;
+  background-color: rgba(80, 43, 8, 0.9);
+}
+
+/* Header */
+
+header {
+  display: flex;
+  width: 100%;
+  padding: 1.25rem 3.75rem;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 248, 242, 0.95);
+  backdrop-filter: blur(5px);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+  font-family: "Heiti SC Light", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+header a {
+  text-decoration: none;
+  color: #502b08;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+header a:active {
+  color: #8d541f;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 420px) {
+  header {
+    padding: 0.625rem 1rem;
+  }
+
+  header a {
+    display: none;
+  }
+}
+
+/* Hero Section */
+
+#hero {
+  background-image: url(./hero-background.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  height: 59rem;
+}
+
+#hero .content-box {
+  position: relative;
+  top: 7.5rem;
+  left: 3.75rem;
+  display: flex;
+  width: 50%;
+  padding: 3.125rem 3.75rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: #fff8f2;
+  box-shadow: 0px 4px 25px 0px rgba(141, 84, 31, 0.1);
+}
+
+@media only screen and (max-width: 760px) {
+    #hero {
+        height: 40rem;
+    }
+
+    #hero .content-box {
+        position: static;
+        background-color: transparent;
+        width: 100%;
+        box-shadow: none;
+    }
+
+}
+
+/* About Us Section */
+
+#aboutus {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4.375rem;
+  margin: 8.125rem 3.75rem 0 3.75rem;
+}
+
+#aboutus .content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.75rem;
+}
+
+#aboutus .text-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.875rem;
+}
+
+#aboutus .text-box p {
+  line-height: 145%;
+}
+
+#aboutus .images-box {
+  display: flex;
+  width: 100%;
+  /* gap: 3.125rem; */
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#aboutus .img-container {
+  width: 48%;
+  height: auto;
+}
+
+@media only screen and (max-width: 420px) {
+  #aboutus {
+    margin: 8.125rem 1rem 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+
+    #aboutus .text-box {
+        flex-wrap: wrap;
+
+    }
+
+    #aboutus .images-box {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #aboutus .img-container {
+        width: 100%;
+        height: auto;
+      }
+}
+
+/* Workshops Section */
+
+#workshops {
+  margin: 6.25rem 3.75rem 0 3.75rem;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.75rem;
+}
+
+#workshops .content-box {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: 3.125rem;
+  flex-wrap: wrap;
+}
+
+#workshops .card {
+  width: 23%;
+  min-width: 17rem;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+  flex: 1 1 18rem;
+}
+
+#workshops .img-container {
+  width: 100%;
+  height: auto;
+}
+
+#workshops .card-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  align-self: stretch;
+}
+
+#workshops .name {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#workshops .name p {
+  font-size: 0.75rem;
+}
+
+#workshops .teacher {
+  font-size: 0.75rem;
+}
+
+#workshops .details {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+}
+
+#workshops .details p {
+  font-family: "Heiti SC Medium";
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 420px) {
+  #workshops {
+    margin: 6.225rem 1rem 0 1rem;
+  }
+}
+
+/* Contacts Section */
+
+#contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.75rem;
+  margin: 6.25rem 3.75rem 0 3.75rem;
+}
+
+#contacts .content-box {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 3.125rem;
+  flex-wrap: wrap;
+}
+
+#contacts .location,
+#contacts .media {
+  flex: 1 1 18rem;
+  min-width: 18rem;
+  max-width: 50rem;
+}
+
+#contacts .location {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.125rem;
+}
+
+#contacts .location p {
+  line-height: 140%;
+}
+
+#contacts .media {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.125rem;
+  width: 48%;
+}
+
+#contacts .text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.125rem;
+}
+
+#contacts li {
+  list-style: none;
+  font-size: 1.25rem;
+  font-family: "Heiti SC Light";
+  font-weight: 300;
+  line-height: 140%;
+}
+
+#contacts .media a {
+  color: #502b08;
+}
+
+#map-desktop {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 420px) {
+    #contacts {
+      margin: 6.225rem 1rem 0 1rem;
+    }
+  }
+
+@media only screen and (max-width: 760px) {
+    #contacts li {
+        line-height: 200%;
+    }
+}
+
+/* Footer */
+
+footer {
+  background-color: #fff8f2;
+  padding: 3.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+footer .copyright {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+footer p {
+    font-family: "Heiti SC Light", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 420px) {
+    footer {
+      padding: 6.225rem 1rem 2rem 1rem;
+    }
+  }
